@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Vanguard &amp; Juris | Chambers of Senior Advocates &amp; Counsel</title>
+  <meta name="description" content="Premier litigation chambers representing Fortune 500 corporations, high-net-worth individuals, and constitutional matters before the Supreme Court of India and High Courts." />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- Fixed 3D Canvas Background for Continuous Scroll Animation -->
+  <canvas id="scroll3DCanvas" class="scroll-canvas-fixed"></canvas>
+
+  <!-- Top Bar Council Rule 36 Notice -->
+  <div class="bar-council-notice">
+    <div class="container bar-council-inner">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span class="bar-council-badge">Bar Council of India Rule 36</span>
+        <span>Information provided solely for informational and professional guidance purposes</span>
+      </div>
+      <div>
+        <span>Supreme Court &amp; High Court Chambers | New Delhi</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" title="Vanguard & Juris">
+        <img src="images/logo/vanguard_logo.svg" alt="Vanguard and Juris Logo" class="brand-logo-img" />
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="practice-areas.html" class="nav-link">Practice Areas</a></li>
+          <li><a href="case-victories.html" class="nav-link">Precedents</a></li>
+          <li><a href="attorneys.html" class="nav-link">Senior Counsel</a></li>
+          <li><a href="consultation.html" class="nav-link">Retainer Brief</a></li>
+          <li><a href="contact.html" class="nav-link">Chambers</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="consultation.html" class="btn btn-outline btn-sm">Assess Retainer</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Confidential Brief</a>
+      </div>
+
+      <button id="mobileNavToggle" class="mobile-toggle" aria-label="Toggle Menu">
+        Menu
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenuDrawer" class="mobile-menu-drawer">
+      <ul>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="practice-areas.html" class="nav-link">Practice Areas</a></li>
+        <li><a href="case-victories.html" class="nav-link">Precedents</a></li>
+        <li><a href="attorneys.html" class="nav-link">Senior Counsel</a></li>
+        <li><a href="consultation.html" class="nav-link">Retainer Brief</a></li>
+        <li><a href="contact.html" class="nav-link">Chambers</a></li>
+        <li><a href="disclaimer.html" class="nav-link">BCI Disclaimer</a></li>
+        <li><a href="privacy.html" class="nav-link">Client Confidentiality</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section with Canvas Interactive 3D Scroll Integration -->
+    <section class="hero-scroll-container">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-pretitle">
+            <span style="display: inline-block; width: 28px; height: 1.5px; background: var(--gold-primary);"></span>
+            Advocates on Record &bull; Supreme Court of India
+          </div>
+          <h1 class="hero-title">
+            Uncompromising Advocacy. <br />
+            <span class="gold-highlight">Definitive Precedent.</span>
+          </h1>
+          <p class="hero-description">
+            Vanguard &amp; Juris is an elite boutique litigation chambers established in 1994. We represent multinational corporations, sovereign entities, and distinguished leaders in complex appellate litigation, white-collar defense, and constitutional disputes.
+          </p>
+          <div class="hero-cta-group">
+            <a href="consultation.html" class="btn btn-primary btn-lg">Retainer &amp; Case Assessment</a>
+            <a href="case-victories.html" class="btn btn-outline btn-lg">Explore Case Precedents</a>
+          </div>
+
+          <!-- Quick Credential Stats -->
+          <div style="display: flex; gap: 32px; margin-top: 50px; border-top: 1px solid var(--border-subtle); padding-top: 24px;">
+            <div>
+              <div style="font-family: var(--font-serif); font-size: 28px; font-weight: 800; color: #ffffff;">32+</div>
+              <div style="font-size: 11px; color: var(--gold-light); text-transform: uppercase; letter-spacing: 1.5px;">Years in Practice</div>
+            </div>
+            <div>
+              <div style="font-family: var(--font-serif); font-size: 28px; font-weight: 800; color: #ffffff;">840+</div>
+              <div style="font-size: 11px; color: var(--gold-light); text-transform: uppercase; letter-spacing: 1.5px;">Reported Judgments</div>
+            </div>
+            <div>
+              <div style="font-family: var(--font-serif); font-size: 28px; font-weight: 800; color: #ffffff;">₹18,500 Cr</div>
+              <div style="font-size: 11px; color: var(--gold-light); text-transform: uppercase; letter-spacing: 1.5px;">Disputed Claims Defended</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll-Scrubbed Text Reveal Section -->
+    <section class="scrub-text-section">
+      <div class="container scrub-container">
+        <span class="section-tag">Guiding Jurisprudence</span>
+        <p class="scroll-reveal-phrase" data-scroll-scrub>
+          In the crucible of the courtroom, victory is neither accidental nor granted. It is engineered through forensic legal research, masterful cross-examination, and an unyielding commitment to constitutional truth. When freedom, enterprise, and reputation stand on trial, we deliver decisive counsel.
+        </p>
+      </div>
+    </section>
+
+    <!-- Core Practice Areas -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Areas of Advocacy</span>
+          <h2 class="section-title">Specialized Appellate &amp; Trial Jurisdictions</h2>
+          <p class="section-desc">
+            Decades of courtroom presence across India's highest appellate forums and specialized economic tribunals.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Area 1 -->
+          <div class="practice-card">
+            <div class="practice-num">I &bull; SUPREME COURT</div>
+            <h3 class="practice-title">Constitutional Writs &amp; Special Leave Petitions</h3>
+            <p class="practice-desc">
+              Authoring and arguing landmark Articles 32 and 226 Writs, challenging executive overreach, regulatory policy validity, and fundamental rights violations.
+            </p>
+            <a href="practice-areas.html" class="practice-link">Explore Precedents &rarr;</a>
+          </div>
+
+          <!-- Area 2 -->
+          <div class="practice-card">
+            <div class="practice-num">II &bull; CORPORATE</div>
+            <h3 class="practice-title">Insolvency &amp; Commercial Disputes (IBC &amp; NCLAT)</h3>
+            <p class="practice-desc">
+              Defending corporate boards, resolution professionals, and institutional creditors in multi-thousand crore insolvency proceedings and shareholder oppression disputes.
+            </p>
+            <a href="practice-areas.html" class="practice-link">Explore Precedents &rarr;</a>
+          </div>
+
+          <!-- Area 3 -->
+          <div class="practice-card">
+            <div class="practice-num">III &bull; DEFENSE</div>
+            <h3 class="practice-title">White-Collar Crime &amp; Enforcement Directorate Defense</h3>
+            <p class="practice-desc">
+              Strategic defense against PMLA, CBI investigations, Serious Fraud Investigation Office (SFIO) actions, and FEMA regulatory penalties.
+            </p>
+            <a href="practice-areas.html" class="practice-link">Explore Precedents &rarr;</a>
+          </div>
+
+          <!-- Area 4 -->
+          <div class="practice-card">
+            <div class="practice-num">IV &bull; ARBITRATION</div>
+            <h3 class="practice-title">International &amp; Domestic Commercial Arbitration</h3>
+            <p class="practice-desc">
+              Handling complex multi-jurisdictional construction, infrastructure concession, and oil &amp; gas arbitrations under SIAC, LCIA, and ICC rules.
+            </p>
+            <a href="practice-areas.html" class="practice-link">Explore Precedents &rarr;</a>
+          </div>
+
+          <!-- Area 5 -->
+          <div class="practice-card">
+            <div class="practice-num">V &bull; INTELLECTUAL PROPERTY</div>
+            <h3 class="practice-title">Patent Infringement &amp; Trademark Enforcement</h3>
+            <p class="practice-desc">
+              Securing ex-parte John Doe injunctions, anti-counterfeiting raids, and cross-border pharmaceutical patent litigation in the High Court of Delhi.
+            </p>
+            <a href="practice-areas.html" class="practice-link">Explore Precedents &rarr;</a>
+          </div>
+
+          <!-- Area 6 -->
+          <div class="practice-card">
+            <div class="practice-num">VI &bull; TAXATION</div>
+            <h3 class="practice-title">Indirect Tax, GST &amp; Customs Litigation</h3>
+            <p class="practice-desc">
+              Challenging retrospective tax notifications, anti-dumping duties, and high-stakes GST classification disputes before the Supreme Court.
+            </p>
+            <a href="practice-areas.html" class="practice-link">Explore Precedents &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Horizontal Pinned Scroll Track for Landmark Precedents -->
+    <div id="pinnedCaseWrapper" class="pinned-case-wrapper">
+      <div class="pinned-case-sticky">
+        <div class="container" style="margin-bottom: 24px;">
+          <span class="section-tag">Courtroom Precedents</span>
+          <h2 class="section-title" style="margin-bottom: 6px;">Landmark Judgments on Record</h2>
+          <p class="section-desc" style="font-size: 14px;">Scroll vertically to scrub horizontally through precedent decisions.</p>
+        </div>
+
+        <div id="horizontalCasesTrack" class="horizontal-cases-track">
+          <!-- Case 1 -->
+          <div class="case-card">
+            <div>
+              <div class="case-card-forum">Supreme Court of India &bull; Constitutional Bench</div>
+              <h3 class="case-card-title">Telecom Infrastructure Spectrum Concession Dispute</h3>
+              <p class="case-card-desc">
+                Successfully defended a top telecom consortium against ₹4,200 Crore retrospective penalty levy, establishing precedent on legitimate regulatory expectation under Article 14.
+              </p>
+            </div>
+            <div class="case-card-metric">
+              <div>
+                <div class="case-metric-val">₹4,200 Cr</div>
+                <div class="case-metric-label">Penalty Quashed</div>
+              </div>
+              <span class="btn btn-outline btn-sm">Full Judgment</span>
+            </div>
+          </div>
+
+          <!-- Case 2 -->
+          <div class="case-card">
+            <div>
+              <div class="case-card-forum">Delhi High Court &bull; Commercial Division</div>
+              <h3 class="case-card-title">Cross-Border Pharmaceutical Patent Injunction</h3>
+              <p class="case-card-desc">
+                Secured immediate ad-interim injunction restraining international generics manufacturer from infringing vital oncology compound patent across Indian territories.
+              </p>
+            </div>
+            <div class="case-card-metric">
+              <div>
+                <div class="case-metric-val">48 Hours</div>
+                <div class="case-metric-label">Injunction Granted</div>
+              </div>
+              <span class="btn btn-outline btn-sm">Full Judgment</span>
+            </div>
+          </div>
+
+          <!-- Case 3 -->
+          <div class="case-card">
+            <div>
+              <div class="case-card-forum">NCLAT Principal Bench &bull; New Delhi</div>
+              <h3 class="case-card-title">Mega Energy Asset Insolvency Resolution</h3>
+              <p class="case-card-desc">
+                Represented Committee of Creditors in successfully navigating ₹6,800 Crore Resolution Plan, achieving 82% debt recovery for state-owned institutional lenders.
+              </p>
+            </div>
+            <div class="case-card-metric">
+              <div>
+                <div class="case-metric-val">82%</div>
+                <div class="case-metric-label">Recovery Rate</div>
+              </div>
+              <span class="btn btn-outline btn-sm">Full Judgment</span>
+            </div>
+          </div>
+
+          <!-- Case 4 -->
+          <div class="case-card">
+            <div>
+              <div class="case-card-forum">Special PMLA Court &bull; Mumbai</div>
+              <h3 class="case-card-title">Corporate Executive PMLA Discharge &amp; Bail</h3>
+              <p class="case-card-desc">
+                Secured absolute discharge and de-freezing of corporate assets in multi-agency investigation, establishing lack of predicate scheduled offense nexus.
+              </p>
+            </div>
+            <div class="case-card-metric">
+              <div>
+                <div class="case-metric-val">Full</div>
+                <div class="case-metric-label">Asset Release</div>
+              </div>
+              <span class="btn btn-outline btn-sm">Full Judgment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Retainer & Case Evaluation Calculator -->
+    <section class="section" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container" style="max-width: 900px;">
+        <div class="section-header" style="margin-bottom: 36px;">
+          <span class="section-tag">Fee Transparency &amp; Retainer Assessment</span>
+          <h2 class="section-title">Confidential Litigation Calculator</h2>
+          <p class="section-desc">
+            Estimate engagement brackets and timeline projections based on judicial forum and procedural posture.
+          </p>
+        </div>
+
+        <div class="calculator-card">
+          <form id="retainerCalculatorForm">
+            <div class="grid-3">
+              <div class="form-group">
+                <label for="calcJurisdiction" class="form-label">Judicial Forum *</label>
+                <select id="calcJurisdiction" class="form-select">
+                  <option value="supreme-court">Supreme Court of India</option>
+                  <option value="high-court">High Court of Delhi / Bombay</option>
+                  <option value="nclt-tribunal">NCLT / NCLAT (Insolvency)</option>
+                  <option value="arbitration">International Arbitration Tribunal</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="calcNature" class="form-label">Matter Nature *</label>
+                <select id="calcNature" class="form-select">
+                  <option value="corporate-arbitration">Commercial Dispute / Contract</option>
+                  <option value="constitutional-writ">Constitutional / Writ Challenge</option>
+                  <option value="criminal-defense">White-Collar Criminal Defense</option>
+                  <option value="ip-patent">Patent / Trademark Injunction</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="calcStage" class="form-label">Procedural Posture *</label>
+                <select id="calcStage" class="form-select">
+                  <option value="slp">Special Leave Petition (Filing)</option>
+                  <option value="appeal">Appellate Final Arguments</option>
+                  <option value="injunction">Ad-Interim Stay / Urgency Notice</option>
+                  <option value="trial">Full Trial Conduct</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Client Contact -->
+            <div class="grid-2">
+              <div class="form-group">
+                <label for="calcClientName" class="form-label">Client / Corporate Name *</label>
+                <input type="text" id="calcClientName" class="form-input" placeholder="e.g., Aditya Singhania / Apex Infra Ltd" required />
+              </div>
+              <div class="form-group">
+                <label for="calcClientPhone" class="form-label">Confidential Phone / WhatsApp *</label>
+                <input type="tel" id="calcClientPhone" class="form-input" placeholder="e.g., +91 98765 43210" required />
+              </div>
+            </div>
+
+            <!-- Dynamic Result Bracket -->
+            <div id="calcResultBox" class="calc-result-box active">
+              <div class="calc-est-title">Indicative Retainer Bracket</div>
+              <div id="calcEstimatedBracket" class="calc-est-number">₹3,50,000 - ₹7,50,000</div>
+              <div id="calcEstimatedTimeline" class="calc-est-timeline">4 to 8 Weeks (Special Leave Petition Filing)</div>
+            </div>
+
+            <div style="margin-top: 24px;">
+              <button type="submit" class="btn btn-primary btn-block btn-lg">Request Priority Senior Counsel Conference</button>
+            </div>
+            <p style="font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 12px;">
+              Subject to conflict-of-interest verification and Bar Council of India guidelines. All discussions covered by strict Attorney-Client Privilege.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Senior Counsel & Leadership Chambers -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Chambers Leadership</span>
+          <h2 class="section-title">Distinguished Senior Advocates &amp; Partners</h2>
+          <p class="section-desc">
+            Senior advocates recognized for unyielding intellectual rigor, judicial respect, and strategic foresight.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card" style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 32px; border-radius: var(--radius-xs);">
+            <div style="font-size: 11px; color: var(--gold-primary); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Senior Advocate</div>
+            <h3 style="font-family: var(--font-serif); font-size: 22px; color: #ffffff; margin-bottom: 6px;">Vikramaditya Roy</h3>
+            <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 14px;">B.A. LL.B. (Hons.) NLSIU, LL.M. Cambridge</p>
+            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6;">
+              32 years of Supreme Court advocacy with specialized focus on Constitutional Benches, telecom spectrum battles, and federal taxation disputes.
+            </p>
+          </div>
+
+          <div class="card" style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 32px; border-radius: var(--radius-xs);">
+            <div style="font-size: 11px; color: var(--gold-primary); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Managing Partner</div>
+            <h3 style="font-family: var(--font-serif); font-size: 22px; color: #ffffff; margin-bottom: 6px;">Ananya Deshmukh</h3>
+            <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 14px;">Advocate on Record &bull; BCL Oxford</p>
+            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6;">
+              Leading the Corporate Insolvency and White-Collar Defense practice across the NCLAT, High Court of Bombay, and Supreme Court registries.
+            </p>
+          </div>
+
+          <div class="card" style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 32px; border-radius: var(--radius-xs);">
+            <div style="font-size: 11px; color: var(--gold-primary); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Partner &bull; Arbitration</div>
+            <h3 style="font-family: var(--font-serif); font-size: 22px; color: #ffffff; margin-bottom: 6px;">Kabir Sen, FCIArb</h3>
+            <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 14px;">Barrister-at-Law, Lincoln's Inn</p>
+            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6;">
+              Recognized authority on international commercial arbitration under SIAC and ICC rules with over ₹12,000 Crore in award enforcements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo/vanguard_logo.svg" alt="Vanguard and Juris Logo" style="height: 48px; width: auto;" />
+          <p>
+            Vanguard &amp; Juris is an elite boutique appellate litigation and arbitration chambers headquartered in New Delhi with chambers adjacent to the Supreme Court of India.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Chambers</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="practice-areas.html">Practice Jurisdictions</a></li>
+            <li><a href="case-victories.html">Landmark Precedents</a></li>
+            <li><a href="attorneys.html">Senior Counsel Profiles</a></li>
+            <li><a href="consultation.html">Retainer Assessment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Jurisdictions</h4>
+          <ul class="footer-links">
+            <li><a href="practice-areas.html">Supreme Court Writs &amp; SLPs</a></li>
+            <li><a href="practice-areas.html">Commercial &amp; IBC Litigation</a></li>
+            <li><a href="practice-areas.html">White-Collar &amp; PMLA Defense</a></li>
+            <li><a href="practice-areas.html">Cross-Border Arbitration</a></li>
+            <li><a href="practice-areas.html">Intellectual Property Rights</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Chambers Registry</h4>
+          <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 12px;">
+            Chamber 44, Lawyers' Chambers Block, Supreme Court of India, Tilak Lane, New Delhi - 110001
+          </p>
+          <p style="font-size: 13px; color: var(--gold-light); margin-bottom: 6px;">
+            Registry Direct: <a href="tel:01123384910" style="color: var(--gold-light);">+91 (011) 2338-4910</a>
+          </p>
+          <a href="contact.html" class="btn btn-outline btn-sm btn-block" style="margin-top: 10px;">Contact Chambers Clerk</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vanguard &amp; Juris Chambers. All rights reserved.</div>
+        <div>
+          <a href="disclaimer.html">Bar Council of India Disclaimer</a>
+          <a href="privacy.html">Attorney-Client Privilege</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Retainer Assessment - Vanguard &amp; Juris | Confidential Chambers Consultation</title>
+  <meta name="description" content="Schedule a confidential case briefing and calculate indicative retainer brackets with Senior Counsel chambers at Vanguard & Juris." />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div class="bar-council-notice">
+    <div class="container bar-council-inner">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span class="bar-council-badge">Bar Council of India Rule 36</span>
+        <span>Information provided solely for informational and professional guidance purposes</span>
+      </div>
+      <div>
+        <span>Supreme Court &amp; High Court Chambers | New Delhi</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" title="Vanguard & Juris">
+        <img src="images/logo/vanguard_logo.svg" alt="Vanguard and Juris Logo" class="brand-logo-img" />
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="practice-areas.html" class="nav-link">Practice Areas</a></li>
+          <li><a href="case-victories.html" class="nav-link">Precedents</a></li>
+          <li><a href="attorneys.html" class="nav-link">Senior Counsel</a></li>
+          <li><a href="consultation.html" class="nav-link active">Retainer Brief</a></li>
+          <li><a href="contact.html" class="nav-link">Chambers</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="consultation.html" class="btn btn-outline btn-sm">Assess Retainer</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Confidential Brief</a>
+      </div>
+
+      <button id="mobileNavToggle" class="mobile-toggle" aria-label="Toggle Menu">
+        Menu
+      </button>
+    </div>
+
+    <div id="mobileMenuDrawer" class="mobile-menu-drawer">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="practice-areas.html" class="nav-link">Practice Areas</a></li>
+        <li><a href="case-victories.html" class="nav-link">Precedents</a></li>
+        <li><a href="attorneys.html" class="nav-link">Senior Counsel</a></li>
+        <li><a href="consultation.html" class="nav-link active">Retainer Brief</a></li>
+        <li><a href="contact.html" class="nav-link">Chambers</a></li>
+        <li><a href="disclaimer.html" class="nav-link">BCI Disclaimer</a></li>
+        <li><a href="privacy.html" class="nav-link">Client Confidentiality</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="section" style="background-color: var(--bg-surface); border-bottom: 1px solid var(--border-subtle); padding: 80px 0 50px;">
+      <div class="container" style="text-align: center;">
+        <span class="section-tag">Senior Counsel Intake</span>
+        <h1 class="section-title" style="font-size: 44px; margin-bottom: 16px;">Confidential Retainer &amp; Case Briefing</h1>
+        <p class="section-desc" style="max-width: 720px; margin: 0 auto;">
+          Use our interactive litigation bracket calculator below to review procedural timelines and request an immediate conference with our registry clerk.
+        </p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container" style="max-width: 900px;">
+        <div class="calculator-card">
+          <form id="retainerCalculatorForm">
+            <div class="grid-3">
+              <div class="form-group">
+                <label for="calcJurisdiction" class="form-label">Judicial Forum *</label>
+                <select id="calcJurisdiction" class="form-select">
+                  <option value="supreme-court">Supreme Court of India</option>
+                  <option value="high-court">High Court of Delhi / Bombay</option>
+                  <option value="nclt-tribunal">NCLT / NCLAT (Insolvency)</option>
+                  <option value="arbitration">International Arbitration Tribunal</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="calcNature" class="form-label">Practice Area *</label>
+                <select id="calcNature" class="form-select">
+                  <option value="corporate-arbitration">Commercial Dispute / Contract</option>
+                  <option value="constitutional-writ">Constitutional / Writ Challenge</option>
+                  <option value="criminal-defense">White-Collar Criminal Defense</option>
+                  <option value="ip-patent">Patent / Trademark Injunction</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="calcStage" class="form-label">Procedural Posture *</label>
+                <select id="calcStage" class="form-select">
+                  <option value="slp">Special Leave Petition (Filing)</option>
+                  <option value="appeal">Appellate Final Arguments</option>
+                  <option value="injunction">Ad-Interim Stay / Urgency Notice</option>
+                  <option value="trial">Full Trial Conduct</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label for="calcClientName" class="form-label">Client / Enterprise Name *</label>
+                <input type="text" id="calcClientName" class="form-input" placeholder="e.g., Aditya Singhania / Apex Infra Ltd" required />
+              </div>
+              <div class="form-group">
+                <label for="calcClientPhone" class="form-label">Confidential WhatsApp / Phone *</label>
+                <input type="tel" id="calcClientPhone" class="form-input" placeholder="e.g., +91 98765 43210" required />
+              </div>
+            </div>
+
+            <!-- Estimated Calculation Box -->
+            <div id="calcResultBox" class="calc-result-box active">
+              <div class="calc-est-title">Indicative Retainer Bracket</div>
+              <div id="calcEstimatedBracket" class="calc-est-number">₹3,50,000 - ₹7,50,000</div>
+              <div id="calcEstimatedTimeline" class="calc-est-timeline">4 to 8 Weeks (Special Leave Petition Filing)</div>
+            </div>
+
+            <div style="margin-top: 24px;">
+              <button type="submit" class="btn btn-primary btn-block btn-lg">Dispatch Brief to Chambers Clerk</button>
+            </div>
+
+            <p style="font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 14px;">
+              All communications sent through this portal are covered by absolute Attorney-Client Privilege under the Indian Evidence Act, 1872.
+            </p>
+          </form>
+        </div>
+
+        <!-- Protocol Details -->
+        <div class="grid-2" style="margin-top: 48px;">
+          <div class="card" style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 28px; border-radius: var(--radius-xs);">
+            <h3 style="font-family: var(--font-serif); font-size: 18px; color: #ffffff; margin-bottom: 10px;">Conflict-of-Interest Screening</h3>
+            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6;">
+              Prior to reviewing sensitive case files, our registry clerk runs an automated conflict check against our existing client roll to prevent professional ethical breaches.
+            </p>
+          </div>
+
+          <div class="card" style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 28px; border-radius: var(--radius-xs);">
+            <h3 style="font-family: var(--font-serif); font-size: 18px; color: #ffffff; margin-bottom: 10px;">Urgent Listing Protocols</h3>
+            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6;">
+              For emergency stay applications, vacation bench mentions, or immediate threat of coercive custody, our chambers provide 24-hour rapid drafting and filing mobilization.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo/vanguard_logo.svg" alt="Vanguard and Juris Logo" style="height: 48px; width: auto;" />
+          <p>
+            Vanguard &amp; Juris is an elite boutique appellate litigation and arbitration chambers headquartered in New Delhi with chambers adjacent to the Supreme Court of India.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Chambers</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="practice-areas.html">Practice Jurisdictions</a></li>
+            <li><a href="case-victories.html">Landmark Precedents</a></li>
+            <li><a href="attorneys.html">Senior Counsel Profiles</a></li>
+            <li><a href="consultation.html">Retainer Assessment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Jurisdictions</h4>
+          <ul class="footer-links">
+            <li><a href="practice-areas.html">Supreme Court Writs &amp; SLPs</a></li>
+            <li><a href="practice-areas.html">Commercial &amp; IBC Litigation</a></li>
+            <li><a href="practice-areas.html">White-Collar &amp; PMLA Defense</a></li>
+            <li><a href="practice-areas.html">Cross-Border Arbitration</a></li>
+            <li><a href="practice-areas.html">Intellectual Property Rights</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Chambers Registry</h4>
+          <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 12px;">
+            Chamber 44, Lawyers' Chambers Block, Supreme Court of India, Tilak Lane, New Delhi - 110001
+          </p>
+          <p style="font-size: 13px; color: var(--gold-light); margin-bottom: 6px;">
+            Registry Direct: <a href="tel:01123384910" style="color: var(--gold-light);">+91 (011) 2338-4910</a>
+          </p>
+          <a href="contact.html" class="btn btn-outline btn-sm btn-block" style="margin-top: 10px;">Contact Chambers Clerk</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vanguard &amp; Juris Chambers. All rights reserved.</div>
+        <div>
+          <a href="disclaimer.html">Bar Council of India Disclaimer</a>
+          <a href="privacy.html">Attorney-Client Privilege</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
