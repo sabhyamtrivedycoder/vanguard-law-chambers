@@ -1,100 +1,82 @@
-# Vanguard & Juris | Chambers of Senior Advocates & Counsel
+# Advocate Sanjay Tiwari | Chambers of Law (Civil & Criminal Litigation Counsel)
 
-> Premier Supreme Court of India & High Courts Appellate Litigation Chambers
+> Civil Court Dhanbad &bull; District & Sessions Court, Dhanbad &bull; High Court of Jharkhand
 
-Vanguard & Juris is an elite digital presence designed specifically for top-tier appellate counsel, senior advocates, and constitutional litigators. The platform combines high-end editorial typography with a custom-engineered 3D vector perspective scroll engine, word-by-word scroll-scrubbed typography reveals, pinned horizontal case precedent tracks, and interactive conflict check and retainer computation systems.
+A high-performance digital presence tailored for **Advocate Sanjay Tiwari**, premier Civil and Criminal courtroom litigator with over 24 years of trial practice at the Dhanbad Bar Association. The platform combines legal editorial typography with a custom-engineered 3D vector perspective scroll engine, word-by-word scroll-scrubbed text reveal, a pinned horizontal case victory track, and an interactive case assessment fee and timeline calculator.
 
-Live Production URL: https://sabhyamtrivedycoder.github.io/vanguard-law-chambers/
+- **Live Production URL:** https://sabhyamtrivedycoder.github.io/vanguard-law-chambers/
+- **Chambers:** Chamber No. 28, Bar Association Building, Civil Court Compound, Court Road, Dhanbad, Jharkhand - 826001
 
 ---
 
-## Key Architectural & Visual Features
+## Practice Jurisdictions & Specializations
+
+1. **Criminal Defense & Sessions Trials:**
+   - Anticipatory Bail (Section 438 CrPC / BNSS) and Regular Bail.
+   - Sessions trial defense in serious offenses (Murder, BNS / IPC offenses, NDPS, Mining Act).
+   - High-stakes cross-examination of prosecution witnesses and investigating officers.
+
+2. **Civil Litigation & Land Title Suits:**
+   - Suits for Declaration of Title and Recovery of Possession.
+   - Partition suits among coparceners and family members.
+   - Chota Nagpur Tenancy (CNT) Act compliance, revenue record analysis, and mutation appeals.
+
+3. **Property Injunctions & Specific Performance:**
+   - Ad-interim stay orders under Order 39 Rules 1 & 2 of the Code of Civil Procedure (CPC).
+   - Suits for Specific Performance of Agreement to Sell.
+   - Execution petitions under Order 21 CPC for decree enforcement.
+
+4. **Cheque Bounce & Commercial Debt Recovery:**
+   - Statutory notice issuance and trial conduct under Section 138 of the Negotiable Instruments Act.
+   - Summary Suits for debt recovery under Order 37 CPC before the Chief Judicial Magistrate (CJM), Dhanbad.
+
+5. **Matrimonial & Family Disputes:**
+   - Contested and mutual consent divorce petitions before the Principal Judge, Family Court, Dhanbad.
+   - Maintenance claims under Section 125 CrPC / BNSS and Domestic Violence Act defense.
+
+6. **Appellate & High Court Advocacy:**
+   - Civil Miscellaneous Appeals and Criminal Revisions before District Judges.
+   - Section 482 CrPC quashing petitions and bail appeals before the High Court of Jharkhand at Ranchi.
+
+---
+
+## Technical & Visual Architecture
 
 ### 1. Interactive 3D Perspective Canvas Engine
-- Custom mathematical 3D rendering engine built directly in vanilla JavaScript and HTML5 Canvas (zero heavy 3D library overhead).
-- Real-time 3D projection of the Imperial Scales of Justice, balanced fulcrum, hanging suspension chords, and temple pedestal.
-- Continuous lerping (`0.08` exponential smoothing) tracking `window.scrollY` and mouse tilt coordinates `(rotX, rotY, rotZ)`.
-- Subtle upward-drifting golden embers reacting to viewport scroll velocity.
+- Mathematically projected 3D model of the Roman Scales of Justice and Temple Pedestal built directly in HTML5 Canvas (zero external 3D engine overhead).
+- Real-time continuous lerping (`0.08` exponential smoothing) tracking `window.scrollY` and mouse tilt coordinates `(rotX, rotY, rotZ)` across 60/120 FPS viewports.
+- Ambient golden embers floating upwards in real time.
 
 ### 2. High-Performance Scroll Mechanics
-- Word-by-Word Kinetic Scrubbing: Extracts text into individual word spans, dynamically adjusting opacity and burnished gold color based on element viewport traversal.
-- Pinned Horizontal Track: Multi-billion rupee landmark precedent cards translate horizontally along the X-axis while pinned in viewport during vertical scroll.
-- Staggered Entrance Reveal: IntersectionObserver pipeline driving smooth transform transitions across practice cards, judicial citations, and counsel profiles.
+- Word-by-Word Kinetic Scrubbing: Illuminates trial philosophy words dynamically from muted opacity to burnished gold as the user scrolls.
+- Pinned Horizontal Track: Multi-acre land title decrees and honorable sessions acquittals glide horizontally while vertically pinned.
+- Staggered Entrance Reveal: IntersectionObserver pipeline driving smooth transform transitions across practice cards and precedents.
 
-### 3. Interactive Retainer & Procedural Timeline Calculator
-- Real-time retainer assessment tool for Corporate and High-Stakes Individual disputes.
-- Dynamically calculates litigation brackets, expected hearing intervals, and procedural stages (SLPs, Interim Stays, Final Arguments).
-- One-click encrypted WhatsApp briefing dispatch with pre-filled case brief parameters.
+### 3. Interactive Case Evaluation Calculator
+- Instant estimation of legal fees and court timelines tailored for Dhanbad District & Sessions Court, Civil Court, CJM Court, and Jharkhand High Court.
+- One-click encrypted WhatsApp case briefing dispatch directly to Advocate Sanjay Tiwari's chambers (+91 94311 22334).
 
-### 4. BCI Rule 36 Statutory Compliance
-- Strictly compliant with Bar Council of India Rule 36 (Standards of Professional Conduct and Etiquette).
-- Editorial, matter-of-fact tone highlighting reported judicial citations, court bench precedents, and academic credentials without solicitation or advertisement.
-- Clear statutory acknowledgment disclaimer accessible across all pages.
+### 4. Bar Council of India (BCI) Rule 36 Compliance
+- Strict adherence to professional ethics prohibiting commercial advertising and solicitation.
+- Editorial tone emphasizing documented judicial citations and court bench precedents.
 
 ---
 
-## Directory Structure
+## Local Development & Build
 
+```bash
+# Install dependencies
+npm install
+
+# Run local development server
+npm run dev
+
+# Compile production bundle
+npm run build
 ```
-vanguard-law-chambers/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml          # Automated GitHub Actions deployment pipeline
-├── public/
-│   ├── favicon.svg             # Imperial Scales of Justice vector seal
-│   └── images/
-│       └── logo/
-│           └── vanguard_logo.svg
-├── src/
-│   ├── main.js                 # Application bootstrap
-│   ├── scrollEngine.js         # 3D canvas engine & scroll interaction controllers
-│   └── style.css               # Obsidian & Imperial Roman Gold styling system
-├── index.html                  # Flagship 3D scroll showcase & executive overview
-├── practice-areas.html         # Constitutional writs, IBC, PMLA, & Arbitration
-├── case-victories.html         # Landmark Supreme Court & High Court reported judgments
-├── attorneys.html              # Senior Advocates, Managing Partners & Counsel
-├── consultation.html           # Retainer calculator & confidential conflict check
-├── contact.html                # Supreme Court Chambers & High Court annexes
-├── privacy.html                # Attorney-Client Privilege under Indian Evidence Act 126
-├── disclaimer.html             # BCI Rule 36 statutory declaration
-├── package.json
-└── vite.config.js              # Multi-page Rollup configuration
-```
-
----
-
-## Local Development
-
-### Prerequisites
-- Node.js (v18.0.0 or higher)
-- npm (v9.0.0 or higher)
-
-### Setup & Execution
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start the local development server:
-   ```bash
-   npm run dev
-   ```
-3. Build for production:
-   ```bash
-   npm run build
-   ```
-4. Preview production build:
-   ```bash
-   npm run preview
-   ```
-
----
-
-## Deployment
-
-The repository is configured for automated GitHub Actions deployment. Every push to the `main` branch triggers the workflow in `.github/workflows/deploy.yml` which builds the Vite project and deploys the generated `dist/` directory to GitHub Pages.
 
 ---
 
 ## Legal & Compliance Notice
 
-This portal is intended solely for informative purposes regarding Vanguard & Juris Chambers in accordance with the regulations established under the Advocates Act, 1961 and Bar Council of India rules. No information contained herein constitutes formal legal advice or the solicitation of legal representation.
+This portal is intended solely for informative purposes regarding Advocate Sanjay Tiwari's legal chambers in accordance with the regulations established under the Advocates Act, 1961 and Bar Council of India rules. No information contained herein constitutes formal legal advice or solicitation of legal representation.

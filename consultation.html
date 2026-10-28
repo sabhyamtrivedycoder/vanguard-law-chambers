@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <title>Retainer Assessment - Vanguard &amp; Juris | Confidential Chambers Consultation</title>
-  <meta name="description" content="Schedule a confidential case briefing and calculate indicative retainer brackets with Senior Counsel chambers at Vanguard & Juris." />
+  <title>Case Assessment &amp; Retainer | Advocate Sanjay Tiwari - Dhanbad Court</title>
+  <meta name="description" content="Calculate legal fee brackets and procedural timelines for Civil &amp; Criminal litigation with Advocate Sanjay Tiwari at Civil Court Dhanbad and High Court of Jharkhand." />
   <link rel="stylesheet" href="/src/style.css" />
 </head>
 <body>
@@ -13,18 +13,18 @@
     <div class="container bar-council-inner">
       <div style="display: flex; align-items: center; gap: 10px;">
         <span class="bar-council-badge">Bar Council of India Rule 36</span>
-        <span>Information provided solely for informational and professional guidance purposes</span>
+        <span>Information provided solely for informative and professional guidance purposes</span>
       </div>
       <div>
-        <span>Supreme Court &amp; High Court Chambers | New Delhi</span>
+        <span>Civil Court Compound &bull; Dhanbad, Jharkhand</span>
       </div>
     </div>
   </div>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="brand-link" title="Vanguard & Juris">
-        <img src="images/logo/vanguard_logo.svg" alt="Vanguard and Juris Logo" class="brand-logo-img" />
+      <a href="index.html" class="brand-link" title="Advocate Sanjay Tiwari Chambers">
+        <img src="images/logo/vanguard_logo.svg" alt="Advocate Sanjay Tiwari Chambers Logo" class="brand-logo-img" />
       </a>
 
       <nav aria-label="Main Navigation">
@@ -32,15 +32,15 @@
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="practice-areas.html" class="nav-link">Practice Areas</a></li>
           <li><a href="case-victories.html" class="nav-link">Precedents</a></li>
-          <li><a href="attorneys.html" class="nav-link">Senior Counsel</a></li>
-          <li><a href="consultation.html" class="nav-link active">Retainer Brief</a></li>
+          <li><a href="attorneys.html" class="nav-link">Advocate Profile</a></li>
+          <li><a href="consultation.html" class="nav-link active">Case Assessment</a></li>
           <li><a href="contact.html" class="nav-link">Chambers</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
-        <a href="consultation.html" class="btn btn-outline btn-sm">Assess Retainer</a>
-        <a href="contact.html" class="btn btn-primary btn-sm">Confidential Brief</a>
+        <a href="consultation.html" class="btn btn-outline btn-sm">Fee Calculator</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Direct Consultation</a>
       </div>
 
       <button id="mobileNavToggle" class="mobile-toggle" aria-label="Toggle Menu">
@@ -53,8 +53,8 @@
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="practice-areas.html" class="nav-link">Practice Areas</a></li>
         <li><a href="case-victories.html" class="nav-link">Precedents</a></li>
-        <li><a href="attorneys.html" class="nav-link">Senior Counsel</a></li>
-        <li><a href="consultation.html" class="nav-link active">Retainer Brief</a></li>
+        <li><a href="attorneys.html" class="nav-link">Advocate Profile</a></li>
+        <li><a href="consultation.html" class="nav-link active">Case Assessment</a></li>
         <li><a href="contact.html" class="nav-link">Chambers</a></li>
         <li><a href="disclaimer.html" class="nav-link">BCI Disclaimer</a></li>
         <li><a href="privacy.html" class="nav-link">Client Confidentiality</a></li>
@@ -65,10 +65,10 @@
   <main>
     <div class="section" style="background-color: var(--bg-surface); border-bottom: 1px solid var(--border-subtle); padding: 80px 0 50px;">
       <div class="container" style="text-align: center;">
-        <span class="section-tag">Senior Counsel Intake</span>
-        <h1 class="section-title" style="font-size: 44px; margin-bottom: 16px;">Confidential Retainer &amp; Case Briefing</h1>
+        <span class="section-tag">Direct Chambers Intake</span>
+        <h1 class="section-title" style="font-size: 44px; margin-bottom: 16px;">Case Assessment &amp; Fee Estimator</h1>
         <p class="section-desc" style="max-width: 720px; margin: 0 auto;">
-          Use our interactive litigation bracket calculator below to review procedural timelines and request an immediate conference with our registry clerk.
+          Use our interactive litigation calculator below to assess indicative legal fees and court hearing intervals for matters before Dhanbad Court and the High Court of Jharkhand.
         </p>
       </div>
     </div>
@@ -81,76 +81,87 @@
               <div class="form-group">
                 <label for="calcJurisdiction" class="form-label">Judicial Forum *</label>
                 <select id="calcJurisdiction" class="form-select">
-                  <option value="supreme-court">Supreme Court of India</option>
-                  <option value="high-court">High Court of Delhi / Bombay</option>
-                  <option value="nclt-tribunal">NCLT / NCLAT (Insolvency)</option>
-                  <option value="arbitration">International Arbitration Tribunal</option>
+                  <option value="dhanbad-district-sessions">District &amp; Sessions Court, Dhanbad</option>
+                  <option value="dhanbad-civil-court">Civil Court (Senior/Junior Division), Dhanbad</option>
+                  <option value="cjm-court">CJM / ACJM / Judicial Magistrate Court</option>
+                  <option value="jharkhand-high-court">High Court of Jharkhand (Ranchi)</option>
                 </select>
               </div>
 
               <div class="form-group">
-                <label for="calcNature" class="form-label">Practice Area *</label>
+                <label for="calcNature" class="form-label">Matter Category *</label>
                 <select id="calcNature" class="form-select">
-                  <option value="corporate-arbitration">Commercial Dispute / Contract</option>
-                  <option value="constitutional-writ">Constitutional / Writ Challenge</option>
-                  <option value="criminal-defense">White-Collar Criminal Defense</option>
-                  <option value="ip-patent">Patent / Trademark Injunction</option>
+                  <option value="criminal-defense">Criminal Defense / Bail / Sessions Trial</option>
+                  <option value="civil-property">Civil Title Suit / Land Dispute / Partition</option>
+                  <option value="ni-act-138">Cheque Bounce (NI Act 138) / Debt Recovery</option>
+                  <option value="matrimonial-family">Family Court / Divorce / Maintenance</option>
                 </select>
               </div>
 
               <div class="form-group">
-                <label for="calcStage" class="form-label">Procedural Posture *</label>
+                <label for="calcStage" class="form-label">Procedural Stage *</label>
                 <select id="calcStage" class="form-select">
-                  <option value="slp">Special Leave Petition (Filing)</option>
-                  <option value="appeal">Appellate Final Arguments</option>
-                  <option value="injunction">Ad-Interim Stay / Urgency Notice</option>
-                  <option value="trial">Full Trial Conduct</option>
+                  <option value="bail-urgent">Urgent Bail / Interim Injunction Hearing</option>
+                  <option value="trial-evidence">Trial Defense, Evidence &amp; Cross-Exam</option>
+                  <option value="final-arguments">Final Arguments &amp; Judgment</option>
+                  <option value="appeal-revision">Appellate Challenge / Revision</option>
                 </select>
               </div>
             </div>
 
             <div class="grid-2">
               <div class="form-group">
-                <label for="calcClientName" class="form-label">Client / Enterprise Name *</label>
-                <input type="text" id="calcClientName" class="form-input" placeholder="e.g., Aditya Singhania / Apex Infra Ltd" required />
+                <label for="calcClientName" class="form-label">Client / Entity Name *</label>
+                <input type="text" id="calcClientName" class="form-input" placeholder="e.g., Rajesh Sharma" required />
               </div>
               <div class="form-group">
-                <label for="calcClientPhone" class="form-label">Confidential WhatsApp / Phone *</label>
-                <input type="tel" id="calcClientPhone" class="form-input" placeholder="e.g., +91 98765 43210" required />
+                <label for="calcClientPhone" class="form-label">Direct Phone / WhatsApp *</label>
+                <input type="tel" id="calcClientPhone" class="form-input" placeholder="e.g., +91 94311 XXXXX" required />
               </div>
             </div>
 
-            <!-- Estimated Calculation Box -->
             <div id="calcResultBox" class="calc-result-box active">
-              <div class="calc-est-title">Indicative Retainer Bracket</div>
-              <div id="calcEstimatedBracket" class="calc-est-number">₹3,50,000 - ₹7,50,000</div>
-              <div id="calcEstimatedTimeline" class="calc-est-timeline">4 to 8 Weeks (Special Leave Petition Filing)</div>
+              <div class="calc-est-title">Indicative Professional Fee Bracket</div>
+              <div id="calcEstimatedBracket" class="calc-est-number">₹35,000 - ₹85,000</div>
+              <div id="calcEstimatedTimeline" class="calc-est-timeline">3 to 6 Months (Sessions Trial &amp; Cross-Examination)</div>
             </div>
 
             <div style="margin-top: 24px;">
-              <button type="submit" class="btn btn-primary btn-block btn-lg">Dispatch Brief to Chambers Clerk</button>
+              <button type="submit" class="btn btn-primary btn-block btn-lg">Send Confidential Brief on WhatsApp</button>
             </div>
-
-            <p style="font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 14px;">
-              All communications sent through this portal are covered by absolute Attorney-Client Privilege under the Indian Evidence Act, 1872.
+            <p style="font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 12px;">
+              Subject to Bar Council of India regulations and verification of court records. All consultations held in strict legal privilege.
             </p>
           </form>
         </div>
 
-        <!-- Protocol Details -->
-        <div class="grid-2" style="margin-top: 48px;">
-          <div class="card" style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 28px; border-radius: var(--radius-xs);">
-            <h3 style="font-family: var(--font-serif); font-size: 18px; color: #ffffff; margin-bottom: 10px;">Conflict-of-Interest Screening</h3>
-            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6;">
-              Prior to reviewing sensitive case files, our registry clerk runs an automated conflict check against our existing client roll to prevent professional ethical breaches.
-            </p>
-          </div>
-
-          <div class="card" style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 28px; border-radius: var(--radius-xs);">
-            <h3 style="font-family: var(--font-serif); font-size: 18px; color: #ffffff; margin-bottom: 10px;">Urgent Listing Protocols</h3>
-            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6;">
-              For emergency stay applications, vacation bench mentions, or immediate threat of coercive custody, our chambers provide 24-hour rapid drafting and filing mobilization.
-            </p>
+        <!-- Protocol Steps -->
+        <div style="margin-top: 60px;">
+          <h3 style="font-family: var(--font-serif); font-size: 24px; color: #ffffff; margin-bottom: 24px; text-align: center;">
+            Chambers Consultation &amp; Trial Intake Protocol
+          </h3>
+          <div class="grid-3">
+            <div class="card" style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 24px;">
+              <div style="font-size: 12px; color: var(--gold-primary); font-weight: 700; margin-bottom: 8px;">STEP 01</div>
+              <h4 style="color: #ffffff; margin-bottom: 8px;">Conflict Check &amp; Verification</h4>
+              <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">
+                Verification that our chambers have no prior engagement or representation with opposing parties in the Dhanbad Court registry.
+              </p>
+            </div>
+            <div class="card" style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 24px;">
+              <div style="font-size: 12px; color: var(--gold-primary); font-weight: 700; margin-bottom: 8px;">STEP 02</div>
+              <h4 style="color: #ffffff; margin-bottom: 8px;">Document &amp; Record Review</h4>
+              <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">
+                Inspection of FIR, case diary entries, certified court orders, registered sale deeds, khatiyan revenue documents, or NI Act statutory notices.
+              </p>
+            </div>
+            <div class="card" style="background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 24px;">
+              <div style="font-size: 12px; color: var(--gold-primary); font-weight: 700; margin-bottom: 8px;">STEP 03</div>
+              <h4 style="color: #ffffff; margin-bottom: 8px;">Direct Chambers Conference</h4>
+              <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">
+                One-on-one strategy session with Advocate Sanjay Tiwari at Chamber No. 28, Bar Association Building, Civil Court Compound, Dhanbad.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -161,48 +172,49 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="images/logo/vanguard_logo.svg" alt="Vanguard and Juris Logo" style="height: 48px; width: auto;" />
+          <img src="images/logo/vanguard_logo.svg" alt="Advocate Sanjay Tiwari Chambers Logo" style="height: 48px; width: auto;" />
           <p>
-            Vanguard &amp; Juris is an elite boutique appellate litigation and arbitration chambers headquartered in New Delhi with chambers adjacent to the Supreme Court of India.
+            Chambers of Advocate Sanjay Tiwari. Professional civil and criminal courtroom advocacy, title suit litigation, bail proceedings, and appellate defense at Dhanbad Court and High Court of Jharkhand.
           </p>
         </div>
 
         <div class="footer-col">
           <h4>Chambers</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Home Overview</a></li>
-            <li><a href="practice-areas.html">Practice Jurisdictions</a></li>
-            <li><a href="case-victories.html">Landmark Precedents</a></li>
-            <li><a href="attorneys.html">Senior Counsel Profiles</a></li>
-            <li><a href="consultation.html">Retainer Assessment</a></li>
+            <li><a href="index.html">Chambers Overview</a></li>
+            <li><a href="practice-areas.html">Practice Specializations</a></li>
+            <li><a href="case-victories.html">Reported Precedents</a></li>
+            <li><a href="attorneys.html">Advocate Profile</a></li>
+            <li><a href="consultation.html">Fee &amp; Timeline Estimator</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Jurisdictions</h4>
+          <h4>Court Jurisdictions</h4>
           <ul class="footer-links">
-            <li><a href="practice-areas.html">Supreme Court Writs &amp; SLPs</a></li>
-            <li><a href="practice-areas.html">Commercial &amp; IBC Litigation</a></li>
-            <li><a href="practice-areas.html">White-Collar &amp; PMLA Defense</a></li>
-            <li><a href="practice-areas.html">Cross-Border Arbitration</a></li>
-            <li><a href="practice-areas.html">Intellectual Property Rights</a></li>
+            <li><a href="practice-areas.html">Criminal Defense &amp; Sessions Trials</a></li>
+            <li><a href="practice-areas.html">Civil Title Suits &amp; Land Disputes</a></li>
+            <li><a href="practice-areas.html">Property Stay &amp; Injunctions (CPC)</a></li>
+            <li><a href="practice-areas.html">Cheque Bounce (NI Act 138)</a></li>
+            <li><a href="practice-areas.html">Matrimonial &amp; Maintenance</a></li>
+            <li><a href="practice-areas.html">High Court of Jharkhand Appeals</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Chambers Registry</h4>
+          <h4>Chambers &amp; Court Office</h4>
           <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 12px;">
-            Chamber 44, Lawyers' Chambers Block, Supreme Court of India, Tilak Lane, New Delhi - 110001
+            Chamber No. 28, Bar Association Building, Civil Court Compound, Court Road, Dhanbad, Jharkhand - 826001
           </p>
           <p style="font-size: 13px; color: var(--gold-light); margin-bottom: 6px;">
-            Registry Direct: <a href="tel:01123384910" style="color: var(--gold-light);">+91 (011) 2338-4910</a>
+            Direct Chambers Line: <a href="tel:+919431122334" style="color: var(--gold-light);">+91 94311 22334</a>
           </p>
-          <a href="contact.html" class="btn btn-outline btn-sm btn-block" style="margin-top: 10px;">Contact Chambers Clerk</a>
+          <a href="contact.html" class="btn btn-outline btn-sm btn-block" style="margin-top: 10px;">Visit Chambers in Dhanbad</a>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 Vanguard &amp; Juris Chambers. All rights reserved.</div>
+        <div>&copy; 2026 Advocate Sanjay Tiwari Chambers. All rights reserved.</div>
         <div>
           <a href="disclaimer.html">Bar Council of India Disclaimer</a>
           <a href="privacy.html">Attorney-Client Privilege</a>

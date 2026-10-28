@@ -339,32 +339,45 @@ function initRetainerCalculator() {
   const estTime = document.getElementById('calcEstimatedTimeline');
 
   function calculate() {
-    const court = courtSelect?.value || 'supreme-court';
-    const nature = natureSelect?.value || 'corporate-arbitration';
-    const stage = stageSelect?.value || 'appeal';
+    const court = courtSelect?.value || 'dhanbad-district-sessions';
+    const nature = natureSelect?.value || 'civil-property';
+    const stage = stageSelect?.value || 'trial-evidence';
 
-    let baseRetainer = "₹2,50,000 - ₹5,00,000";
-    let timeline = "6 to 12 Weeks (Initial Arguments & Admission)";
+    let baseRetainer = "₹25,000 - ₹60,000";
+    let timeline = "2 to 4 Months (Trial Progression & Evidence)";
 
-    if (court === 'supreme-court') {
-      if (stage === 'slp') {
-        baseRetainer = "₹3,50,000 - ₹7,50,000";
-        timeline = "4 to 8 Weeks (Special Leave Petition Filing)";
-      } else {
-        baseRetainer = "₹5,00,000 - ₹12,00,000";
-        timeline = "8 to 16 Weeks (Senior Counsel Oral Advocacy)";
-      }
-    } else if (court === 'high-court') {
+    if (court === 'dhanbad-district-sessions') {
       if (nature === 'criminal-defense') {
-        baseRetainer = "₹2,00,000 - ₹4,50,000";
-        timeline = "2 to 4 Weeks (Anticipatory / Regular Bail Hearing)";
+        if (stage === 'bail-urgent') {
+          baseRetainer = "₹15,000 - ₹35,000";
+          timeline = "3 to 10 Days (Regular / Anticipatory Bail Hearing)";
+        } else {
+          baseRetainer = "₹35,000 - ₹85,000";
+          timeline = "3 to 6 Months (Sessions Trial & Cross-Examination)";
+        }
       } else {
-        baseRetainer = "₹1,80,000 - ₹4,00,000";
-        timeline = "4 to 8 Weeks (Writ Petition Listing)";
+        baseRetainer = "₹30,000 - ₹75,000";
+        timeline = "4 to 8 Months (Title Appeal / Civil Revision)";
       }
-    } else if (court === 'nclt-tribunal') {
-      baseRetainer = "₹3,00,000 - ₹6,50,000";
-      timeline = "6 to 10 Weeks (IBC Insolvency & Company Petition)";
+    } else if (court === 'dhanbad-civil-court') {
+      if (stage === 'bail-urgent') {
+        baseRetainer = "₹20,000 - ₹40,000";
+        timeline = "1 to 3 Weeks (Ad-Interim Injunction Hearing)";
+      } else {
+        baseRetainer = "₹35,000 - ₹90,000";
+        timeline = "6 to 12 Months (Title Suit, Partition, Evidence & Decree)";
+      }
+    } else if (court === 'cjm-court') {
+      if (nature === 'ni-act-138') {
+        baseRetainer = "₹15,000 - ₹40,000";
+        timeline = "2 to 5 Months (Cheque Bounce Trial & Cross-Examination)";
+      } else {
+        baseRetainer = "₹12,000 - ₹30,000";
+        timeline = "1 to 3 Months (Magisterial Trial / Discharge Hearing)";
+      }
+    } else if (court === 'jharkhand-high-court') {
+      baseRetainer = "₹50,000 - ₹1,50,000";
+      timeline = "1 to 3 Months (Criminal Appeal / Civil Revision / Writ at Ranchi)";
     }
 
     if (estVal) estVal.textContent = baseRetainer;
@@ -384,10 +397,10 @@ function initRetainerCalculator() {
     const nature = natureSelect?.options[natureSelect.selectedIndex]?.text || '';
     const retainer = estVal?.textContent || '';
 
-    const text = `Confidential Retainer Consultation Request:%0A- Client Name: ${encodeURIComponent(name)}%0A- Phone: ${encodeURIComponent(phone)}%0A- Forum: ${encodeURIComponent(jurisdiction)}%0A- Practice Area: ${encodeURIComponent(nature)}%0A- Indicative Fee Bracket: ${encodeURIComponent(retainer)}`;
-    window.open(`https://wa.me/919876543210?text=${text}`, '_blank');
+    const text = `Case Assessment Request for Advocate Sanjay Tiwari (Dhanbad Court):%0A- Client Name: ${encodeURIComponent(name)}%0A- Phone: ${encodeURIComponent(phone)}%0A- Court Forum: ${encodeURIComponent(jurisdiction)}%0A- Matter Category: ${encodeURIComponent(nature)}%0A- Indicative Fee Estimate: ${encodeURIComponent(retainer)}`;
+    window.open(`https://wa.me/919431122334?text=${text}`, '_blank');
 
-    alert(`Thank you, ${name}. Your confidential case briefing has been dispatched to Senior Counsel Chambers. Our registry clerk will contact you.`);
+    alert(`Thank you, ${name}. Your confidential case briefing has been received. Advocate Sanjay Tiwari's chambers at Dhanbad Court will review your matter promptly.`);
   });
 }
 

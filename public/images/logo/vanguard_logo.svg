@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 80" width="460" height="80">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 80" width="520" height="80">
   <defs>
     <linearGradient id="goldGleam" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#fdf4dc" />
@@ -28,10 +28,10 @@
   </g>
 
   <!-- Typography -->
-  <text x="86" y="38" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="24" font-weight="700" fill="#ffffff" letter-spacing="2">
-    VANGUARD <tspan fill="url(#goldGleam)">&amp; JURIS</tspan>
+  <text x="86" y="38" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="1.5">
+    SANJAY TIWARI <tspan fill="url(#goldGleam)">| ADVOCATE</tspan>
   </text>
-  <text x="88" y="58" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" font-weight="600" fill="#a3aab8" letter-spacing="2.8">
-    CHAMBERS OF SENIOR ADVOCATES &amp; COUNSEL
+  <text x="88" y="58" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9.5" font-weight="600" fill="#a3aab8" letter-spacing="2.2">
+    CIVIL &amp; CRIMINAL LITIGATION - DHANBAD COURT
   </text>
 </svg>
